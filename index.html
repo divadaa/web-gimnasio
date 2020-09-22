@@ -5,17 +5,25 @@
         table, td, th {
             border: 1px solid black;
             border-collapse: collapse;
+            width: 100%;
         } 
-        td, th{
+        td, th, table {
             padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            
         }
+        td {width: 25%}
+        a {color:inherit}
+       
+        
     </style>
 </head>
 <body>
     <table style="width:100%">
-    <tr>
-        <td colspan="2">Invoice *12345678</td>
-        <td colspan="2">14 January 2025</td>
+    <tr body style="background-color: lightslategray;">
+        <td colspan="3"><b>Invoice *12345678</b></td>
+        <td colspan="2"><b>4 January 2025</b></td>
     </tr>
     <tr>
         <td colspan="2"><b>Pay to:</b><br>
@@ -46,16 +54,16 @@
         <td>100</td>
     </tr>
     <tr>
-        <td><b>Subtotal</b></td>
+        <td colspan="3"><b>Subtotal</b></td>
         <td>110.00</td>
     </tr>
     <tr>
-        <td><b>Tax</b></td>
+        <td colspan="2"><b>Tax</b></td>
         <td>8%</td>
         <td>8.80</td>
     </tr>
     <tr>
-        <td><b>Grand Total</b></td>
+        <td colspan="3"><b>Grand Total</b></td>
         <td>$ 118.80</td>
     </tr>
 
